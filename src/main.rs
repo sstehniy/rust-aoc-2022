@@ -5,6 +5,6 @@ mod rock_paper_scissors;
 
 fn main() {
     calorie_counting::solve();
-    // rock_paper_scissors::solve();
-    println!("Hello, world!");
+    println!("-------------------------------------------");
+    rock_paper_scissors::solve();
 }
