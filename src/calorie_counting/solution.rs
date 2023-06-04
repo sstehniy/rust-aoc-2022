@@ -3,16 +3,11 @@ const INPUT: &str = include_str!("input.txt");
 pub fn solve() {
     println!("In calorie counting solver");
 
-    let max_carried = solve_part_one(&INPUT);
-
-    println!("Max carried: {}", max_carried);
-
-    let top_three_carried = solve_part_two(&INPUT);
-
-    println!("Top three carried: {}", top_three_carried);
+    solve_part_one(&INPUT);
+    solve_part_two(&INPUT);
 }
 
-fn solve_part_one(contents: &str) -> u32 {
+fn solve_part_one(contents: &str) {
     let mut max = 0;
     let mut current_sum = 0;
 
@@ -25,10 +20,10 @@ fn solve_part_one(contents: &str) -> u32 {
         }
     }
 
-    max
+    println!("Solution Part 1: {}", max);
 }
 
-fn solve_part_two(contents: &str) -> u32 {
+fn solve_part_two(contents: &str) {
     let mut all_carried: Vec<u32> = contents
         .split("\n\n")
         .map(|group| {
@@ -43,5 +38,5 @@ fn solve_part_two(contents: &str) -> u32 {
     all_carried.reverse();
     all_carried.truncate(3);
 
-    all_carried.iter().sum()
+    println!("Solution Part 2: {}", all_carried.iter().sum::<u32>());
 }

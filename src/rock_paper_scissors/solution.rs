@@ -28,7 +28,7 @@ fn solve_part_one(contents: &str) {
         total_score += total_round_score as u32;
     }
 
-    println!("Total score Part 1: {}", total_score);
+    println!("Solution Part 1: {}", total_score);
 }
 
 fn solve_part_two(contents: &str) {
@@ -47,7 +47,7 @@ fn solve_part_two(contents: &str) {
         total_score += total_round_score as u32;
     }
 
-    println!("Total score Part 2: {}", total_score);
+    println!("Solution Part 2: {}", total_score);
 }
 
 fn eval_round_part_one(opponent: &str, mine: &str) -> EvalResult {
