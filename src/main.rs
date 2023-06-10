@@ -6,6 +6,8 @@ mod camp_cleanup;
 mod rock_paper_scissors;
 #[path = "rucksack_reorganization/solution.rs"]
 mod rucksack_reorganization;
+#[path = "supply_stacks/solution.rs"]
+mod supply_stacks;
 
 fn main() {
     calorie_counting::solve();
@@ -15,4 +17,6 @@ fn main() {
     rucksack_reorganization::solve();
     println!("-------------------------------------------");
     camp_cleanup::solve();
+    println!("-------------------------------------------");
+    supply_stacks::solve();
 }
