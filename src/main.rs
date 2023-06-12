@@ -8,6 +8,8 @@ mod rock_paper_scissors;
 mod rucksack_reorganization;
 #[path = "supply_stacks/solution.rs"]
 mod supply_stacks;
+#[path = "tuning_trouble/solution.rs"]
+mod tuning_trouble;
 
 fn main() {
     calorie_counting::solve();
@@ -19,4 +21,6 @@ fn main() {
     camp_cleanup::solve();
     println!("-------------------------------------------");
     supply_stacks::solve();
+    println!("-------------------------------------------");
+    tuning_trouble::solve();
 }
