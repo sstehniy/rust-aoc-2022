@@ -2,6 +2,8 @@
 mod calorie_counting;
 #[path = "camp_cleanup/solution.rs"]
 mod camp_cleanup;
+#[path = "no_space_left_on_device/solution.rs"]
+mod no_space_left_on_device;
 #[path = "rock_paper_scissors/solution.rs"]
 mod rock_paper_scissors;
 #[path = "rucksack_reorganization/solution.rs"]
@@ -10,6 +12,9 @@ mod rucksack_reorganization;
 mod supply_stacks;
 #[path = "tuning_trouble/solution.rs"]
 mod tuning_trouble;
+
+#[path = "tree.rs"]
+mod tree;
 
 fn main() {
     calorie_counting::solve();
@@ -23,4 +28,8 @@ fn main() {
     supply_stacks::solve();
     println!("-------------------------------------------");
     tuning_trouble::solve();
+    println!("-------------------------------------------");
+    no_space_left_on_device::solve();
+    println!("-------------------------------------------");
+    tree::create_tree();
 }
