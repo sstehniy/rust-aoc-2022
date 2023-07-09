@@ -13,9 +13,6 @@ mod supply_stacks;
 #[path = "tuning_trouble/solution.rs"]
 mod tuning_trouble;
 
-#[path = "tree.rs"]
-mod tree;
-
 fn main() {
     calorie_counting::solve();
     println!("-------------------------------------------");
@@ -30,6 +27,4 @@ fn main() {
     tuning_trouble::solve();
     println!("-------------------------------------------");
     no_space_left_on_device::solve();
-    println!("-------------------------------------------");
-    tree::create_tree();
 }
